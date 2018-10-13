@@ -5,6 +5,7 @@ var button = document.getElementsByTagName('button')[0];
 var yourFortune = document.querySelector('#fortune-wrapper p span');
 
 var fortuneTextPlaceholder = document.createTextNode('');
+yourFortune.appendChild(fortuneTextPlaceholder);
 
 function shakeBall(){
 	magicFortunes.sort(function(a,b){return 0.5 - Math.random()});
