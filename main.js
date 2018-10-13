@@ -7,7 +7,7 @@ var yourFortune = document.querySelector('#fortune-wrapper p span');
 var fortuneTextPlaceholder = document.createTextNode('');
 yourFortune.appendChild(fortuneTextPlaceholder);
 
-function shakeBall(){
+var shakeBall = function(){
 	magicFortunes.sort(function(a,b){return 0.5 - Math.random()});
 	
 	var fortuneText = document.createTextNode(magicFortunes[0]);
