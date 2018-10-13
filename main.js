@@ -15,6 +15,8 @@ function shakeBall(){
 	
 	var buttonSection = document.getElementById('generator-button');
 	buttonSection.removeChild(button);
+	
+	yourFortune.classList.add('fortune-show');
 }
 
 button.onclick = shakeBall;
