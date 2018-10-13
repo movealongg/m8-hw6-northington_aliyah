@@ -5,3 +5,5 @@ var button = document.getElementsByTagName('button')[0];
 function shakeBall(){
 	magicFortunes.sort(function(a,b){return 0.5 - Math.random()});
 }
+
+button.onclick = shakeBall;
